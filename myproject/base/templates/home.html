@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h1>HOME PAGE</h1>  
+<center>
+    <form action="">
+        <input type="text" name="search" id="">
+        <button type="submit">Search</button>
+    </form>
+    {% for i in data %}
+    <h1>{{i.name}} // {{i.course}}</h1>
+    {% endfor %}
+</center>  
+{% endblock %}
