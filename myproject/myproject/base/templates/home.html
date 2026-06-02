@@ -1,0 +1,39 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h1>HOME PAGE</h1> 
+<center>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="">Product Name:</label>
+        <input type="text" name="product_name" id=""> <br><br>
+
+        <label for="">Price:</label>
+        <input type="number" name="price" id=""> <br><br>
+
+        <button type="submit">SUBMIT</button>
+    </form>
+</center> 
+
+<center>
+    <h1>GET METHOD</h1>
+    <h2>{{data.name}} // {{data.price}}</h2>
+</center>
+
+<center>
+    <h1>FILTER METHOD</h1>
+    <h2>{{data1}}</h2>
+    {% for i in data1 %}
+    <h2>{{i.name}} // {{i.price}}</h2>
+    {% endfor %}
+</center>
+
+<center>
+    <h1>ALL METHOD</h1>
+    <h2>{{data2}}</h2>
+    {% for i in data2 %}
+    <h2>{{i.name}} // {{i.price}}</h2>
+    <a href=""></a>
+    {% endfor %}
+</center>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h1>COMPLETE PAGE</h1>   
+<center>
+    {% for i in data %}
+    <h1>{{i.title}} // {{i.desc}}</h1>
+    <a href="{% url 'restore_c' i.id %}">RESTORE</a>
+    <a href="">DELETE</a>
+    {% endfor %}
+    <br>
+    <a href="{% url 'restore_allc' %}">RESTORE ALL</a>
+    <a href="">DELETE ALL</a>
+</center> 
+{% endblock %}

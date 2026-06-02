@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h1>UPDATE PAGE</h1> 
+<center>
+    {{data}} // {{data.name}} // {{data.price}}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="">Product name:</label>
+        <input type="text" name="product_name" id="" value="{{data.name}}><br><br>
+
+        <label for="">Price</label>
+        <input type="number" name="product_price" id="" value="{{data.price}}"><br><br>
+
+        <button type="submit">SUBMIT</button>
+    </form>
+</center>
+{% endblock %}

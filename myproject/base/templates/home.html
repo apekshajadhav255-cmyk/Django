@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h1>HOME PAGE</h1> 
+<center>
+    {% for i in data %}
+    <h1>{{i.title}} // {{i.desc}}</h1>
+    <a href="{% url 'completeh' i.id %}">COMPLETE</a>
+    <a href="{% url 'deleteh' i.id %}">DELETE</a>
+    <a href="{% url 'update' i.id %}">UPDATE</a>
+    {% endfor %}
+    <br>
+    <a href="{% url 'complete_allh' %}">COMPLETE ALL</a>
+    <a href="">DELETE ALL</a>
+</center>   
+{% endblock %}
