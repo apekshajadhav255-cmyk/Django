@@ -1,6 +1,7 @@
 {% extends 'main.html' %}
 
 {% block content %}
+<<<<<<< HEAD
 <h1>HOME PAGE</h1> 
 <center>
     {% for i in data %}
@@ -13,4 +14,16 @@
     <a href="{% url 'complete_allh' %}">COMPLETE ALL</a>
     <a href="">DELETE ALL</a>
 </center>   
+=======
+<h1>HOME PAGE</h1>  
+<center>
+    <form action="">
+        <input type="text" name="search" id="">
+        <button type="submit">Search</button>
+    </form>
+    {% for i in data %}
+    <h1>{{i.name}} // {{i.course}}</h1>
+    {% endfor %}
+</center>  
+>>>>>>> f8dba96501fb03a42c59f7c82ad17de050d38c26
 {% endblock %}

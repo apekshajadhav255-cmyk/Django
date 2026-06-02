@@ -3,6 +3,7 @@ from .views import *
 
 urlpatterns = [
     path('',home,name='home'),
+<<<<<<< HEAD
     path('add/',add,name='add'),
     path('complete/',complete,name='complete'),#complete page
     path('trash/',trash,name='trash'),
@@ -19,3 +20,7 @@ urlpatterns = [
 #DELETE ALL IN HOME PAGE
 #DELETE , DELETE ALL IN COMPLETE PAGE - MOVE TO TrashModel
 #DELETE, DELETE ALL IN TRASH PAGE - delete it from TrashModel
+=======
+    path('add/',add,name='add')
+]
+>>>>>>> f8dba96501fb03a42c59f7c82ad17de050d38c26

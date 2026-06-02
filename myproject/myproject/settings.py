@@ -20,7 +20,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+<<<<<<< HEAD
 SECRET_KEY = 'django-insecure-636z_j-#$gxj!mgj2z)9jvd3xg+kcv-t@xg-4*az-pk=q_^@xo'
+=======
+SECRET_KEY = 'django-insecure-_@70k9=%dwhpl9f=hmqi9j(t@tn97dp$j+04__5l3f9r*&je=j'
+>>>>>>> f8dba96501fb03a42c59f7c82ad17de050d38c26
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -116,7 +120,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+<<<<<<< HEAD
 
 STATICFILES_DIRS = [
     BASE_DIR/'static'
 ]
+=======
+>>>>>>> f8dba96501fb03a42c59f7c82ad17de050d38c26
